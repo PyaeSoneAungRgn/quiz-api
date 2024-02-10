@@ -1,0 +1,44 @@
+{
+  "name": "pyaesoneaung/quiz-api",
+  "description": "Quiz Api Client",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "PyaeSoneAung\\QuizApi\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PyaeSoneAung\\QuizApi\\Tests\\": "tests"
+    }
+  },
+  "authors": [
+    {
+      "name": "Pyae Sone Aung",
+      "email": "pyaesoneaungrgn@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "illuminate/contracts": "^9.0|^10.0",
+    "pyaesoneaung/quiz-api-client": "^1.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^8.0|^9.0",
+    "pestphp/pest": "^2.33"
+  },
+  "extra": {
+    "laravel": {
+      "providers": ["PyaeSoneAung\\QuizApi\\QuizApiServiceProvider"]
+    },
+    "aliases": {
+      "QuizApi": "PyaeSoneAung\\QuizApi\\Facades\\QuizApi"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
+}
